@@ -126,8 +126,10 @@ public class MainActivity extends AppCompatActivity {
                     for (int index = 0; index < textBlocks.size(); index++) {
                         //extract scanned text blocks here
                         TextBlock tBlock = textBlocks.valueAt(index);
-                        blocks = blocks + tBlock.getValue() + "\n" + "\n";
+                        blocks = blocks + tBlock.getValue().trim()+"\n";
+
                     }
+                    blocks.trim();
                     if (textBlocks.size() == 0) {
                         scanResults.setText("Scan Failed: Found nothing to scan");
                     } else {

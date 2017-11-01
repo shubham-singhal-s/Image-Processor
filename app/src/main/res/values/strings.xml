@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Image Processor</string>
+    <string name="desc">This app scans images for text and operates on it. You can select an image from gallery or capture one from camera.\n Steps:\n 1. Select how you want to upload the image.\n 2. The app shows the text retrieved from the image. Click on it to process.\n 3. You can either copy the text, share it or use TTS to hear it.</string>
+</resources>

@@ -27,7 +27,8 @@
                 android:resource="@xml/provider_paths" />
         </provider>
 
-        <activity android:name=".SplashScreen">
+        <activity android:name=".SplashScreen"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -39,10 +40,14 @@
             android:name="com.google.android.gms.vision.DEPENDENCIES"
             android:value="ocr" />
 
-        <activity android:name=".MainActivity" />
-        <activity android:name=".Processor" />
-        <activity android:name=".Selector" />
-        <activity android:name=".About"></activity>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Processor"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Selector"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".About"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

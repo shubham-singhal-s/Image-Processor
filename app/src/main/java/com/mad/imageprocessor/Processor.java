@@ -57,7 +57,8 @@ public class Processor extends AppCompatActivity {
                 sendIntent.setAction(Intent.ACTION_SEND);
                 sendIntent.putExtra(Intent.EXTRA_TEXT, text);
                 sendIntent.setType("text/plain");
-                startActivity(sendIntent);
+                startActivity(Intent.createChooser(sendIntent,"Share Text"));
+                //startActivity(sendIntent);
             }
         });
 
